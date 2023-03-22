@@ -10,7 +10,7 @@ function  handleChange({target})
    // const value=target.value
    const{name,value}=target
 setInput((prev)=>({...prev,[name]:value}))
-
+}
 function handleSubmit(e)
 {
     e.preventDefault()
@@ -20,7 +20,7 @@ if(input==null)
 }
 }
 
-}
+
 return(
 <form onSubmit={handleSubmit}>
 <label for='username'>Username:</label>
