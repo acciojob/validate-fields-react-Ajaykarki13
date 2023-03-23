@@ -13,11 +13,10 @@ setInput((prev)=>({...prev,[name]:value}))
 }
 function handleSubmit(e)
 {
-    e.preventDefault()
-if(input==null)
-{
-    <p id="errorMessage">Both username and password are requird</p>
-}
+    e.preventDefault();
+    
+    <p style={{color: 'red'}}id="errorMessage">Both username and password are requird</p>
+
 }
 
 
