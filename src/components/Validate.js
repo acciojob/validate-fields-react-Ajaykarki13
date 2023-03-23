@@ -14,9 +14,9 @@ setInput((prev)=>({...prev,[name]:value}))
 function handleSubmit(e)
 {
     e.preventDefault();
-    
-    <p style={{color: 'red'}}id="errorMessage">Both username and password are requird</p>
-
+    if(Object.keys(input).length===0){
+    <p style={{color: 'red'}} id="errorMessage">Both username and password are requird</p>
+    }
 }
 
 
